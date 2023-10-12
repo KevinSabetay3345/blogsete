@@ -1,0 +1,44 @@
+{
+  "name": "blogsete",
+  "version": "1.0.0",
+  "description": "Blog application",
+  "author": "Kevin Sabetay",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KevinSabetay3345/blogsete"
+  },
+  "scripts": {
+    "start": "node ./src/app.js",
+    "test": "mocha src/test/*.test.js --timeout 5000"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.1",
+    "mocka": "^0.0.1",
+    "mongoose": "^7.4.4",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "request-ip": "^3.3.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.8",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0"
+  },
+  "keywords": [
+    "REST",
+    "API",
+    "node",
+    "express",
+    "mongoose"
+  ]
+}
