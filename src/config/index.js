@@ -5,7 +5,7 @@ const env = process.env.NODE_ENV
 const prod = {
   env: 'prod',
   server: {
-    port: 8000
+    port: 3000
   },
   database: {
     url: process.env.DB_URL,
