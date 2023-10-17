@@ -126,6 +126,7 @@ describe('USERS endpoints', () => {
         { name: '', email: '', password: '' },
         { name: 'new user', email: '', password: '' },
         { name: '', email: '', password: '123456' },
+        { name: '', email: 'test@test.com', password: '' },
         { name: 'new user', email: 'test@test.com', password: '' },
         { name: '', email: 'test@test.com', password: '123456' },
         { name: 'new user', email: '', password: '123456' }
@@ -245,7 +246,7 @@ describe('USERS endpoints', () => {
         it('it should fail since some data was empty or invalid', (done) => {
           chai
             .request(server.httpServer)
-            .put('/posts/'+id)
+            .put('/users/'+id)
             .set('Authorization', admin.token)
             .send({ name: 'update user name', email: 'updateuser@test.com' })
             .end((_, res) => {
